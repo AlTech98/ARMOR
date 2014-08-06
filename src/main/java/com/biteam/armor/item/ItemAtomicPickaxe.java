@@ -15,7 +15,7 @@ public class ItemAtomicPickaxe extends ItemPickaxe
 {
     public ItemAtomicPickaxe()
     {
-        super(Material.Tools.EPIC_MATTER);
+        super(Material.Tools.ATOMIC_MATTER);
         this.setUnlocalizedName("atomicPickaxe");
         this.setCreativeTab(CreativeTabARMOR.ARMOR_TAB);
     }
