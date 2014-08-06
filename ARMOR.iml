@@ -657,7 +657,16 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../CoFHLib-[1.7.10]1.0.0B3-dev-20.jar!/" />
+          <root url="jar://$USER_HOME$/Downloads/CoFHCore-[1.7.10]3.0.0B3-dev-26.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/Downloads/ThermalExpansion-[1.7.10]4.0.0B3-dev-11.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

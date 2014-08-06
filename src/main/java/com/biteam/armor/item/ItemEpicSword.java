@@ -39,19 +39,18 @@ import java.util.List;
 public class ItemEpicSword extends ItemSword implements IEnergyContainerItem
 {
 
-    public int maxEnergy = 9000;
-    public int maxTransfer = 1600;
-    public int energyPerUse = 200;
-    public int energyPerUseCharged = 800;
-
-    public int damage = 99;
+    private int maxEnergy = 9000;
+    private int maxTransfer = 1600;
+    private int energyPerUse = 200;
+    private int energyPerUseCharged = 800;
+    private int damage = 99;
 
 
 
     public ItemEpicSword()
     {
         super(Material.Tools.EPIC_MATTER);
-        this.setUnlocalizedName("epicSword");
+        this.setUnlocalizedName("EpicSword");
         this.setCreativeTab(CreativeTabARMOR.ARMOR_TAB);
         this.setNoRepair();
     }
@@ -128,9 +127,7 @@ public class ItemEpicSword extends ItemSword implements IEnergyContainerItem
     @Override
     public void onUpdate(ItemStack stack, World world, Entity entity, int slot, boolean isCurrentItem) {
 
-      /*  if (!isEmpowered(stack) || !isCurrentItem) {
-            return;
-        }*/
+
         if (entity instanceof EntityPlayer) {
             if (((EntityPlayer) entity).isBlocking()) {
 
@@ -200,42 +197,6 @@ public class ItemEpicSword extends ItemSword implements IEnergyContainerItem
         return getIcon(stack, 0);
     }
 
-  /*  @Override
-    public IIcon getIcon(ItemStack stack, int pass) {
-
-       return isEmpowered(stack) ? this.activeIcon : getEnergyStored(stack) <= 0 ? this.drainedIcon : this.itemIcon;
-    }
-
-
-
-    @Override
-    public boolean isEmpowered(ItemStack stack) {
-
-        return stack.stackTagCompound == null ? false : stack.stackTagCompound.getBoolean("Empowered");
-    }
-
-    @Override
-    public boolean setEmpoweredState(ItemStack stack, boolean state) {
-
-        if (getEnergyStored(stack) > 0) {
-            stack.stackTagCompound.setBoolean("Empowered", state);
-            return true;
-        }
-        stack.stackTagCompound.setBoolean("Empowered", false);
-        return false;
-    }
-
-    @Override
-    public void onStateChange(EntityPlayer player, ItemStack stack) {
-
-        if (isEmpowered(stack)) {
-            player.worldObj.playSoundAtEntity(player, "ambient.weather.thunder", 0.4F, 1.0F);
-        } else {
-            player.worldObj.playSoundAtEntity(player, "random.orb", 0.2F, 0.6F);
-        }
-    }*/
-
-    /* IEnergyContainerItem */
     @Override
     public int receiveEnergy(ItemStack container, int maxReceive, boolean simulate) {
 
@@ -265,9 +226,7 @@ public class ItemEpicSword extends ItemSword implements IEnergyContainerItem
             stored -= extract;
             container.stackTagCompound.setInteger("Energy", stored);
 
-            /*if (stored == 0) {
-                setEmpoweredState(container, false);
-            }*/
+
         }
         return extract;
     }
