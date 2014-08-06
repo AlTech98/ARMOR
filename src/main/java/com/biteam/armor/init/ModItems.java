@@ -4,6 +4,7 @@ package com.biteam.armor.init;
 import com.biteam.armor.item.ItemARMOR;
 import com.biteam.armor.item.ItemAtomicPickaxe;
 import com.biteam.armor.item.ItemEpicSword;
+import com.biteam.armor.reference.Material;
 import com.biteam.armor.reference.Reference;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.item.Item;
@@ -15,6 +16,7 @@ public class ModItems
 {
     public static final ItemSword epicSword = new ItemEpicSword();
     public static final ItemPickaxe atomicPickaxe = new ItemAtomicPickaxe();
+
 
     public static void init()
     {
