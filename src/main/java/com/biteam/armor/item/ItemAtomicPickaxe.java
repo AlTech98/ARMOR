@@ -13,6 +13,7 @@ import net.minecraft.item.ItemSword;
 
 public class ItemAtomicPickaxe extends ItemPickaxe
 {
+    //TODO Add RF support
     public ItemAtomicPickaxe()
     {
         super(Material.Tools.ATOMIC_MATTER);

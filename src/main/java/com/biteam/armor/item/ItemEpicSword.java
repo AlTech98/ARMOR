@@ -104,7 +104,6 @@ public class ItemEpicSword extends ItemSword implements IEnergyContainerItem
                 && !player.isPotionActive(Potion.blindness) && player.ridingEntity == null) ? 1.5F : 1.0F;
 
         if (thePlayer.capabilities.isCreativeMode || useEnergy(stack, false) == getEnergyPerUse(stack)) {
-           // float fluxDamage = isEmpowered(stack) ? damageCharged : 1;
             float enchantDamage = damage + EnchantmentHelper.getEnchantmentModifierLiving(player, entity);
 
             entity.attackEntityFrom(DamageHelper.causePlayerFluxDamage(thePlayer), 1);
