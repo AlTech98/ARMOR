@@ -8,7 +8,7 @@ public class Material
 {
     public static final class Tools
     {
-        public static final Item.ToolMaterial EPIC_MATTER = EnumHelper.addToolMaterial("EPIC_MATTER", 3, 0, 30f, 96f, 0);
+        public static final Item.ToolMaterial EPIC_MATTER = EnumHelper.addToolMaterial("EPIC_MATTER", 3, 100, 30f, 96f, 25);
         public static final Item.ToolMaterial ATOMIC_MATTER = EnumHelper.addToolMaterial("ATOMIC_MATTER", 3, 0, 30f, 96f, 0);
         public static final Item.ToolMaterial BASIC_MATTER = EnumHelper.addToolMaterial("BASIC_MATTER", 3, 0, 30f, 96f, 0);
     }
