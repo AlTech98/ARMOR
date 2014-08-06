@@ -8,11 +8,11 @@ public class Material
 {
     public static final class Tools
     {
-        public static final Item.ToolMaterial EPIC_MATTER = EnumHelper.addToolMaterial("EPIC_MATTER", 3, 0, 30f, 9999996f, 0);
+        public static final Item.ToolMaterial EPIC_MATTER = EnumHelper.addToolMaterial("EPIC_MATTER", 3, 0, 30f, 96f, 0);
     }
 
     public static final class Armor
     {
-      //  public static final ItemArmor.ArmorMaterial DARK_MATTER = EnumHelper.addArmorMaterial(Names.Materials.DARK_MATTER, 0, new int[]{3, 8, 6, 3}, 0);
+        public static final ItemArmor.ArmorMaterial EPIC_MATTER = EnumHelper.addArmorMaterial("EPIC_MATTER", 0, new int[]{3, 8, 6, 3}, 0);
     }
 }
