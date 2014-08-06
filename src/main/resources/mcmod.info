@@ -1,16 +1,18 @@
 [
 {
-  "modid": "LetsModReboot",
-  "name": "Lets Mod Reboot",
-  "description": "Pahimar's Let's Mod Reboot series. Follow along on YouTube!",
+  "modid": "ARMOR",
+  "name": "A RARE MATERIAL OR ROCK?",
+  "description": "This mod will make you the most powerful player",
   "version": "0.0.1",
   "mcversion": "1.7.10",
   "url": "",
   "updateUrl": "",
   "authorList": [
-    "pahimar"
+    "AlTech98"
+    "Pa-Paolo"
+    "Crasher"
   ],
-  "credits": "",
+  "credits": "Thanks to Pahimar For his tutorial!",
   "logoFile": "",
   "screenshots": [
   ],
