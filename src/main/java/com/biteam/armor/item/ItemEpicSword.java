@@ -39,7 +39,7 @@ import java.util.List;
 public class ItemEpicSword extends ItemSword implements IEnergyContainerItem
 {
 
-    private int maxEnergy = 9000;
+    private int maxEnergy = 20000;
     private int maxTransfer = 1600;
     private int energyPerUse = 200;
     private int energyPerUseCharged = 800;
