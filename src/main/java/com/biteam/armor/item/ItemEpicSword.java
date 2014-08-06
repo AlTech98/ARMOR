@@ -50,7 +50,7 @@ public class ItemEpicSword extends ItemSword implements IEnergyContainerItem
     public ItemEpicSword()
     {
         super(Material.Tools.EPIC_MATTER);
-        this.setUnlocalizedName("EpicSword");
+        this.setUnlocalizedName("epicSword");
         this.setCreativeTab(CreativeTabARMOR.ARMOR_TAB);
         this.setNoRepair();
     }
