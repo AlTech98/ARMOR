@@ -13,7 +13,7 @@ public class CreativeTabARMOR
         @Override
         public Item getTabIconItem()
         {
-            return ModItems.mapleLeaf; // Creative Tab's Icon
+            return ModItems.epicSword; // Creative Tab's Icon
         }
     };
 }
