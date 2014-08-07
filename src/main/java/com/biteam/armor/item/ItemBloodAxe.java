@@ -15,7 +15,7 @@ public class ItemBloodAxe extends ItemAxe
     public ItemBloodAxe()
     {
         super(Material.Tools.EPIC_MATTER);
-        this.setUnlocalizedName("bloodAxe");
+        this.setUnlocalizedName("atomicAxe");
         this.setCreativeTab(CreativeTabARMOR.ARMOR_TAB);
     }
 
