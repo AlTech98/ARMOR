@@ -11,7 +11,10 @@ public class Recipes
 {
     public static void init()
     {
-        GameRegistry.addRecipe(new ItemStack(ModItems.atomicPickaxe), " s ", "sss", " s ", 's', new ItemStack(Items.stick));
+        GameRegistry.addRecipe(new ItemStack(ModItems.atomicPickaxe), " s ", "srs", " s ",
+                's', new ItemStack(Items.stick),
+                'r', new ItemStack(Items.redstone)
+        );
         GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.flag), new ItemStack(Items.blaze_rod), new ItemStack(Items.baked_potato));
 
         /* Crafting Using Ore Dictionary
