@@ -14,6 +14,7 @@ public class ItemARMOR extends Item
     public ItemARMOR()
     {
         super();
+        this.maxStackSize = 64;
         this.setCreativeTab(CreativeTabARMOR.ARMOR_TAB);
     }
 
