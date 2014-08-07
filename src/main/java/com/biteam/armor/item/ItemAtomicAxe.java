@@ -10,9 +10,9 @@ import net.minecraft.item.ItemAxe;
 import net.minecraft.item.ItemStack;
 
 
-public class ItemBloodAxe extends ItemAxe
+public class ItemAtomicAxe extends ItemAxe
 {
-    public ItemBloodAxe()
+    public ItemAtomicAxe()
     {
         super(Material.Tools.EPIC_MATTER);
         this.setUnlocalizedName("atomicAxe");
