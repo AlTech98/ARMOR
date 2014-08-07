@@ -21,6 +21,7 @@ public class ModItems
     public static final ItemARMOR basicCrystal = new ItemBasicCrystal();
     public static final ItemARMOR atomicCrystal = new ItemAtomicCrystal();
     public static final ItemARMOR epicCrystal = new ItemEpicCrystal();
+    public static final ItemSword atomicSword = new ItemAtomicSword();
 
 
     public static void init()
@@ -34,5 +35,6 @@ public class ModItems
         GameRegistry.registerItem(basicCrystal, "basicCrystal");
         GameRegistry.registerItem(atomicCrystal, "atomicCrystal");
         GameRegistry.registerItem(epicCrystal, "epicCrystal");
+        GameRegistry.registerItem(atomicSword, "atomicSword");
     }
 }
