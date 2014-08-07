@@ -3,6 +3,7 @@ package com.biteam.armor.init;
 
 import com.biteam.armor.item.ItemAtomicAxe;
 import com.biteam.armor.item.ItemAtomicPickaxe;
+import com.biteam.armor.item.ItemAtomicSword;
 import com.biteam.armor.item.ItemEpicSword;
 import com.biteam.armor.reference.Reference;
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -16,6 +17,7 @@ public class ModItems
     public static final ItemSword epicSword = new ItemEpicSword();
     public static final ItemPickaxe atomicPickaxe = new ItemAtomicPickaxe();
     public static final ItemAxe bloodAxe = new ItemAtomicAxe();
+    public static final ItemSword atomicSword = new ItemAtomicSword();
 
 
     public static void init()
@@ -23,5 +25,6 @@ public class ModItems
         GameRegistry.registerItem(epicSword, "epicSword");
         GameRegistry.registerItem(atomicPickaxe, "atomicPickaxe");
         GameRegistry.registerItem(bloodAxe, "bloodAxe");
+        GameRegistry.registerItem(atomicSword,"atomicSword");
     }
 }
