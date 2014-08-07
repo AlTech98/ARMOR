@@ -22,7 +22,7 @@ public class ItemEpicArmor extends ItemArmor
 
         if (placement == 0) this.setTextureName(Reference.MOD_ID + ":epicHelmet");
         if (placement == 1) this.setTextureName(Reference.MOD_ID + ":epicChestplate");
-        if (placement == 2) this.setTextureName(Reference.MOD_ID + ":epicLegs");
+        if (placement == 2) this.setTextureName(Reference.MOD_ID + ":epicLeggins");
         if (placement == 3) this.setTextureName(Reference.MOD_ID + ":epicBoots");
     }
 
