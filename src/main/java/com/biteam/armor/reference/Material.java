@@ -15,7 +15,7 @@ public class Material
 
     public static final class Armor
     {
-        public static final ItemArmor.ArmorMaterial EPIC_MATTER = EnumHelper.addArmorMaterial("EPIC_MATTER", 0, new int[]{3, 8, 6, 3}, 0);
+        public static final ItemArmor.ArmorMaterial EPIC_MATTER = EnumHelper.addArmorMaterial("EPIC_MATTER", 33, new int[]{3, 8, 6, 3}, 0);
         public static final ItemArmor.ArmorMaterial ATOMIC_MATTER = EnumHelper.addArmorMaterial("ATOMIC_MATTER", 0, new int[]{3, 8, 6, 3}, 0);
         public static final ItemArmor.ArmorMaterial BASIC_MATTER = EnumHelper.addArmorMaterial("BASIC_MATTER", 0, new int[]{3, 8, 6, 3}, 0);
     }

@@ -16,7 +16,7 @@ public class ModItems
 {
     public static final ItemSword epicSword = new ItemEpicSword();
     public static final ItemPickaxe atomicPickaxe = new ItemAtomicPickaxe();
-    public static final ItemAxe bloodAxe = new ItemAtomicAxe();
+    public static final ItemAxe atomicAxe = new ItemAtomicAxe();
     public static final ItemSword atomicSword = new ItemAtomicSword();
 
 
@@ -24,7 +24,7 @@ public class ModItems
     {
         GameRegistry.registerItem(epicSword, "epicSword");
         GameRegistry.registerItem(atomicPickaxe, "atomicPickaxe");
-        GameRegistry.registerItem(bloodAxe, "bloodAxe");
+        GameRegistry.registerItem(atomicAxe, "atomicAxe");
         GameRegistry.registerItem(atomicSword,"atomicSword");
     }
 }
