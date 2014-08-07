@@ -151,8 +151,16 @@ public class ItemEpicSword extends ItemSword implements IEnergyContainerItem
             EnergyHelper.setDefaultEnergyTag(stack, 0);
         }
         list.add("Charge" + ": " + stack.stackTagCompound.getInteger("Energy") + " / " + maxEnergy + " RF");
-
         list.add(StringHelper.ORANGE + getEnergyPerUse(stack) + " " + "Energy per Use" + StringHelper.END);
+
+
+        if (getEnergyStored(stack) >= getEnergyPerUse(stack))
+        {
+            list.add("");
+            list.add(StringHelper.LIGHT_BLUE + "+" + damage + " " + StringHelper.localize("info.cofh.damageAttack") + StringHelper.END);
+        }
+
+
     }
 
     @Override
