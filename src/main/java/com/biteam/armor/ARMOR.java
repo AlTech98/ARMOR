@@ -45,7 +45,7 @@ public class ARMOR
     @Mod.EventHandler
     public void postInit(FMLPostInitializationEvent event)
     {
-        // Elenca nella console tutto quello che appartiene all'ore Dictionary
+        // Elenca nella console tutto quello che appartiene all'ore Dictionary alde cacca
         for(String oreName : OreDictionary.getOreNames())
         {
             LogHelper.info(oreName);
