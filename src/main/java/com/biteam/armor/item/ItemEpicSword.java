@@ -42,7 +42,6 @@ public class ItemEpicSword extends ItemSword implements IEnergyContainerItem
     private int maxEnergy = 20000;
     private int maxTransfer = 1600;
     private int energyPerUse = 200;
-    private int energyPerUseCharged = 800;
     private int damage = 99;
 
 
@@ -58,13 +57,13 @@ public class ItemEpicSword extends ItemSword implements IEnergyContainerItem
     protected int useEnergy(ItemStack stack, boolean simulate) {
 
         int unbreakingLevel = MathHelper.clampI(EnchantmentHelper.getEnchantmentLevel(Enchantment.unbreaking.effectId, stack), 0, 4);
-        return extractEnergy(stack, false ? energyPerUseCharged * (5 - unbreakingLevel) / 5 : energyPerUse * (5 - unbreakingLevel) / 5, simulate);
+        return extractEnergy(stack, energyPerUse * (5 - unbreakingLevel) / 5, simulate);
     }
 
     protected int getEnergyPerUse(ItemStack stack) {
 
         int unbreakingLevel = MathHelper.clampI(EnchantmentHelper.getEnchantmentLevel(Enchantment.unbreaking.effectId, stack), 0, 4);
-        return (false ? energyPerUseCharged : energyPerUse) * (5 - unbreakingLevel) / 5;
+        return (energyPerUse) * (5 - unbreakingLevel) / 5;
     }
 
     @Override
@@ -151,16 +150,9 @@ public class ItemEpicSword extends ItemSword implements IEnergyContainerItem
         if (stack.stackTagCompound == null) {
             EnergyHelper.setDefaultEnergyTag(stack, 0);
         }
-        list.add(StringHelper.localize("info.cofh.charge") + ": " + stack.stackTagCompound.getInteger("Energy") + " / " + maxEnergy + " RF");
+        list.add("Charge" + ": " + stack.stackTagCompound.getInteger("Energy") + " / " + maxEnergy + " RF");
 
-        list.add(StringHelper.ORANGE + getEnergyPerUse(stack) + " " + StringHelper.localize("info.redstonearsenal.tool.energyPerUse") + StringHelper.END);
-
-        if (getEnergyStored(stack) >= getEnergyPerUse(stack)) {
-            list.add("");
-            list.add(StringHelper.LIGHT_BLUE + "+" + damage + " " + StringHelper.localize("info.cofh.damageAttack") + StringHelper.END);
-
-
-        }
+        list.add(StringHelper.ORANGE + getEnergyPerUse(stack) + " " + "Energy per Use" + StringHelper.END);
     }
 
     @Override
