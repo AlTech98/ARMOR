@@ -20,10 +20,10 @@ public class ItemEpicArmor extends ItemArmor
         this.setUnlocalizedName(name);
         this.setCreativeTab(CreativeTabARMOR.ARMOR_TAB);
 
-        if (placement == 0) this.setTextureName(Reference.MOD_ID + ":epicHelmet");
+       /* if (placement == 0) this.setTextureName(Reference.MOD_ID + ":epicHelmet");
         if (placement == 1) this.setTextureName(Reference.MOD_ID + ":epicChestplate");
         if (placement == 2) this.setTextureName(Reference.MOD_ID + ":epicLeggins");
-        if (placement == 3) this.setTextureName(Reference.MOD_ID + ":epicBoots");
+        if (placement == 3) this.setTextureName(Reference.MOD_ID + ":epicBoots");*/
     }
 
     public String getArmorTexture(ItemStack stack, Entity entity, int slot, String type)
